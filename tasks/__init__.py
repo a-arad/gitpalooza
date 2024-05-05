@@ -1,2 +1,3 @@
 # tasks/__init__.py
-from .github_integration import fetch_github_issues
+from .gh_integration import fetch_github_issues
+
