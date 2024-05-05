@@ -10,5 +10,5 @@ async def start_web_server():
     app.router.add_post('/github-webhook', handle_github_webhook)
     runner = web.AppRunner(app)
     await runner.setup()
-    site = web.TCPSite(runner, 'localhost', 8080)
+    site = web.TCPSite(runner, 'localhost', 8080) # use ngrok for now
     await site.start()
